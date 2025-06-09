@@ -1,12 +1,28 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/Header";
+import ChatListWidget from "@/components/ChatListWidget";
+import OnlineUsersWidget from "@/components/OnlineUsersWidget";
+import StatsWidget from "@/components/StatsWidget";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen bg-gray-50">
+      <Header />
+
+      <main className="container mx-auto px-6 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="lg:col-span-1">
+            <ChatListWidget />
+          </div>
+
+          <div className="lg:col-span-1">
+            <OnlineUsersWidget />
+          </div>
+
+          <div className="lg:col-span-1">
+            <StatsWidget />
+          </div>
+        </div>
+      </main>
     </div>
   );
 };
