@@ -42,6 +42,19 @@ const Header = () => {
             <Icon name="Plus" size={16} />
             Новый чат
           </Button>
+          <div className="flex items-center space-x-2 ml-4">
+            <Button
+              variant="outline"
+              className="border-purple-200 text-purple-600 hover:bg-purple-50"
+            >
+              <Icon name="LogIn" size={16} />
+              Войти
+            </Button>
+            <Button className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700">
+              <Icon name="UserPlus" size={16} />
+              Регистрация
+            </Button>
+          </div>
         </nav>
       </div>
     </header>
